@@ -43,6 +43,7 @@ public class GameStory {
             case "getEye" : GetEye(); break;
             case "giveEye" : GiveEye(); break;
             case "goodEnding" : GoodEnding(); break;
+            case "shutdown" : Shutdown(); break;
         }
     }
     
@@ -291,14 +292,18 @@ public class GameStory {
         
         ui.StoryText.setText("Whether this story real or not it's still a fragment of reality\nSo remember be careful of what story you tell or heard of...\nAnd don't forget to find the eye");
         ui.ChoiceButton1.setText("Return to Title Screen");
-        ui.ChoiceButton2.setText("");
+        ui.ChoiceButton2.setText("Exit");
         ui.ChoiceButton3.setText("");
         ui.ChoiceButton4.setText("");
         
         main.nextPosition1 = "titleScreen";
-        main.nextPosition2 = "";
+        main.nextPosition2 = "shutdown";
         main.nextPosition3 = "";
         main.nextPosition4 = "";  
+    }
+       public void Shutdown(){
+        
+        System.exit(0);
     }
         public void TitleScreen(){
         
