@@ -69,7 +69,7 @@ public class GameUI {
         BackgroundImage = new ImageIcon(".//res//TitleBackground.jpg");
         
         Image BImage = BackgroundImage.getImage();
-        Image ModifiedBImage = BImage.getScaledInstance(1600,900, java.awt.Image.SCALE_SMOOTH);
+        Image ModifiedBImage = BImage.getScaledInstance(ScreenW,ScreenH, java.awt.Image.SCALE_SMOOTH);
         BackgroundImage = new ImageIcon(ModifiedBImage);
         
         BackgroundPanel = new JPanel();
